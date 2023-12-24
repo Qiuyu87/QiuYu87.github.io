@@ -1,0 +1,405 @@
+/* 总体 */
+a{
+    /* 所有链接无下划线无变色 */
+    text-decoration : none;
+    color:inherit;
+}
+body{
+    color: rgb(197, 197, 197);
+    background-color: rgb(0, 0, 0);
+   
+    
+}
+header{
+    background-color: rgb(23, 29, 37);
+    height: 130px;
+}
+.header01{
+    padding: 0 200px 0 0;
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 12px;
+    /* background-color: red; */
+}
+.header01 div{
+    text-align: center;
+    height: 18px;
+    width: 60px;
+}
+.header01 div:hover {
+    /* 悬停变色 */
+    color: white;
+    border-color: rgb(197, 197, 197);/* 边框不变色 */ 
+}
+
+#install{
+    background-color: rgb(92, 126, 16);
+}
+#install:hover{
+    background-color: rgb(105, 146, 18);
+}
+#login{
+    border-right-style: solid;
+}
+
+
+
+.dropdown {
+    /* “语言”+下拉面板 */
+    position: relative;
+    display: inline-block;
+  }
+.dropbtn {
+    /* “语言”按钮样式 */
+    background-color: rgb(23, 29, 37);
+    color: rgb(197, 197, 197);
+    font-size : 12px;
+    border: none;/* 立体边框 */
+    cursor: pointer;/* 光标样式 */
+  }
+.dropdown-content {
+    /* 下拉内容(默认隐藏) */
+    display: none;
+    position: absolute;
+    background-color: #a9a9a9;/* 下拉悬停背景色 */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+.dropdown:hover .dropdown-content {
+    /* 悬停时显示下拉菜单 */
+    display: block;
+  }
+.dropdown:hover .dropbtn {
+    /* 悬停变色 */
+    color: white;
+  }
+
+
+  /* header02=steam图标+商店+社区+关于+客服 */
+ .header02{
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 0 200px;
+ }
+ /* steam图标 */
+ #logo{
+    font-size:400%;
+    text-indent: 10px;
+    color: rgba(0, 255, 255,0);
+    background-image: url("images/steam图标.png");
+    width: 220px;
+    height: 100px;
+ }
+ /* 商店社区关于客服 */
+ .nologo{
+    margin: 30px 0 30px 20px;
+    display: flex;
+    flex-direction: row;
+ }
+ /* 四者任意一个 */
+ .nologo div{
+    height: 25px;
+    width: 50px;
+ }
+
+ .nologo div:hover{
+    color: white;
+ }
+ /* #logo {
+    background-image: url("images/steam图标.png");
+    background-size: 200px;
+    background-repeat: no-repeat;
+    text-indent: -9999px; 
+    height: 61px;
+    margin: 0 0 0 100px;
+}
+.nologo{
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 0 200px;
+    background-color: red;
+}
+.nologo div{
+    text-align: center;
+    height: 25px;
+    width: 50px;
+} */
+
+ /* .noheader{
+    display: flex;
+    flex-direction: row;
+ } */
+
+
+
+
+
+ .steamMain{
+    margin: 0 230px 0 230px;
+    background: rgb(48, 26, 16);
+    display: flex;
+ }
+ video{
+    width: 100.05%;
+ }
+
+
+/* 头像+介绍+等级徽章 */
+ .main01{
+    padding: 10px 0 0 0px;
+    display: flex;
+    flex-direction: row;
+    height: 180px;
+    width: 1037px;
+    opacity: 1;
+    /* background-color: rgb(48, 26, 16);加这行显示棕色背景板 */
+ }
+ 
+ div .introduce {
+    width: 600px;
+    height: 196px;
+    margin: 0 10px 0 10px;
+    padding: 0px 0 0 20px;
+    
+    
+    text-align: left;
+    background-color: rgb(48, 26, 16);
+ }
+
+ #avatar{  /* 头像 */
+    background-repeat: no-repeat;
+
+  }
+
+  .introduce p {/*行距*/
+    line-height: 1;
+  }
+ #name{
+    color: white;
+    font-size:25px;
+ }
+ #nameAndCountry{
+    font-size:13px;
+ }
+ #triangle{/*名字三角*/
+    font-size:12px;
+}
+#nameunder{/* xqy China HelloGammer */
+    font-size:13px;
+}
+
+
+
+
+
+div .gradeAndBadge{/*等级和徽章*/
+    width: 280px;
+    height: 196px;
+    padding: 40px 0 0 0px;
+    
+}
+
+ .badge{/* 徽章类 */
+    width: 300px;
+    height: 75px;
+    background-color: rgba(38, 22, 13, 0.8);
+    display: flex;
+    flex-direction: row;
+   
+}
+#badgePicture{
+    object-fit: scale-down;
+}
+ .gradeAndBadge p{
+    padding: 8px 0 0 8px;
+    text-align: left;
+    color: white;
+    font-size: 13px;
+}
+
+
+
+
+
+.main02{
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+.perfectAndLast{
+    margin: 35px 10px 10px 230px;
+    width: 747px;
+    height: 820px;
+    background-color: rgb(38, 22, 13, 95%);
+}
+.friends{
+    margin: 35px 0 0 0;
+    padding: 10px;
+    width: 300px;
+    height: 650px;
+    background-color: rgb(38, 22, 13, 95%);
+}
+ .perfect, .last{
+    height: 400px;
+    margin: 20px 10px;
+ }
+ #perfectHeader{
+    display: inline;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+ }
+ .perfect1234{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0 0 0;
+ }
+ .perfect1234 img{
+    width: 359px;
+ }
+
+ #living{
+    color: rgb(22, 206, 215);
+    font-size: 20px;
+ }
+
+  .badge1234 img{
+    object-fit: cover;
+
+    width: 55px;
+    height: 55px;
+    
+    padding: 15px 8px;
+  }
+
+
+  #lastHeader{
+    display: inline;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    position: relative;
+    top: -5px;
+  }
+  .last01, .last02, .last03{
+    margin: 10px 10px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    
+  }
+  #last01name, #last02name, #last03name{
+    position: relative;
+    right: -10px;
+    top:10px;
+    width: 900px;
+  }
+  .last01 img, .last02 img, .last03 img{
+    width: auto;
+    object-fit: scale-down;
+  }
+  .rightdown{
+    width: 800px;
+    font-size: 12px;
+    color: rgb(197, 197, 197);
+    text-align: right;
+    vertical-align: bottom;
+  }
+
+ .friends:hover {
+    opacity: 0.3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main03{
+    margin: 20px 10px 30px 230px;
+    width: 747px;
+    height: 300px;
+    background-color: rgb(38, 22, 13, 95%);
+}
+ #reviewHeader{
+    display: inline;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    position: relative;
+    top: 20px;
+    right: -10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ footer{
+    text-align: center;
+    font-size: small;
+    display: flex;
+    flex-direction: row;
+    padding: 0 0 10px 280px;
+}
+ footer img{
+    object-fit: scale-down; 
+}
+ footer .text{
+    line-height: 0.8;
+ }
+
+footer nav{
+    display:flex;
+}
+
+footer div a:hover{
+    color: white;
+}
+
+footer nav div{
+    padding: 0 10px 0 10px;
+    font-size: 11px;
+    border-right-style: solid;
+}
+footer nav div:hover{
+    color: white;
+    border-color: rgb(197, 197, 197);
+}
+
+#rightestFooter{
+    border-right-style:hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
